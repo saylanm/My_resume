@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>ПОРТФОЛИО</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="img/main/programming-code-application-development-computer-svgrepo-com.svg" alt="Logo" width="50" height="50" >
+        </div>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <button data-goto=".main" href="#" class="menu__link">Главная</button>
+            </li>
+            <li class="menu__item">
+              <button data-goto=".about" href="#" class="menu__link">Об мне</button>
+            </li>
+            <li class="menu__item">
+              <button data-goto=".contacts" href="#" class="menu__link">Контакты</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__main main">
+        <div class="main__container">
+          <div class="main__content">
+            <h1 class="main__title">Семён<span>Семёнов</span></h1>
+            <div class="main__buttons">
+              <button href="#" class="main__hire-button button">Нажми на меня</button>
+            </div>
+          </div>
+          <div class="main__image">
+            <video src="./video/video_1.webm" alt="Image" width="300" height="300">
+          </div>
+        </div>
+      </section>
+      <section class="page__about about">
+        <div class="about__container">
+          <div class="about__content">
+            <h2 class="about__title title">Чутка <span>о мне</span></h2>
+            <div class="about__text">
+              <p>
+                Привет! Меня зовут Семён, мне 21 год. Я занимаюсь разработкой около 2-ух лет.
+                Я начинающий Web-разрабочик, работающий в таких технологиях,
+                как JavaScript, API, DOM, NodeJs, Git(GitHub), HTML(использовал как то шаблонизатор Pug),
+                CSS(использовал шаблонизатор SCSS), Webpack(сборка и отправка проекта).
+                Из стека технологий фреймов - это Reac.jst/Vue.js. Так же мне повелось поработать в Figme(мало часов).
+                До frontend-разработки я занимался(около 1 года) бэкендом на Python в стеке Django/DRF(Django Rest Framework).
+                Но frontend, мне показался ближе по душе. Я побывал, как Бэке (условно говоря под капотом), что бы узнать,
+                как устроено вся разработка и вовсе перешел во frontend.
+              </p>
+            </div>
+          </div>
+          <div class="about__image">
+            <img src="img/main/ava.jpg" alt="Image">
+          </div>
+        </div>
+      </section>
+      <section class="page__works works">
+        <div class="works__container">
+          <h2 class="works__title title">Мои награды</h2>
+          <div class="works__items items-works">
+            <nav class="items-works__navigation">
+              <button data-work-type="" class="items-works__type button button_dark active">Сертификаты</button>
+              <button data-work-type="ui" class="items-works__type button button_dark">Дипломы</button>
+              <button data-work-type="ux" class="items-works__type button button_dark">Благодарности</button>
+              <button data-work-type="wd" class="items-works__type button button_dark">Работы</button>
+            </nav>
+            <div class="items-works__body">
+              <a data-work-type="ui" href="#" class="items-works__item">
+                <div class="item-works__image">
+                  <img src="img/works/items/01.png" alt="Image">
+                </div>
+              </a>
+              <a data-work-type="ux" href="#" class="items-works__item">
+                <div class="item-works__image">
+                  <img src="img/works/items/02.png" alt="Image">
+                </div>
+              </a>
+              <a data-work-type="wd" href="#" class="items-works__item">
+                <div class="item-works__image">
+                  <img src="img/works/items/03.png" alt="Image">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page__contacts contacts">
+        <div class="contacts__container">
+          <div class="contacts__content">
+            <h2 class="contacts__title title">Связь<span> со мной?</span></h2>
+            <div class="contacts__image">
+              <img src="img/contacts/image.svg" alt="Image">
+            </div>
+          </div>
+          <form action="#" class="contacts__form form">
+            <div class="form__item">
+              <label for="i-1" class="form__label">Ваше имя</label>
+              <input required id="i-1" type="text" class="form__input" placeholder="Имя" name="name">
+            </div>
+            <div class="form__item">
+              <label for="i-2" class="form__label">Ваш email</label>
+              <input required id="i-2" type="email" class="form__input" placeholder="Email" name="email">
+            </div>
+            <div class="form__item">
+              <label for="i-3" class="form__label">Ваше сообщение</label>
+              <textarea id="i-3" class="form__input" placeholder="Сообщение" name="messsage"></textarea>
+            </div>
+            <div class="form__item">
+              <button type="submit" class="form__button button"><span>Отправить сообщение</span></button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <nav class="footer__menu menu-footer">
+          <ul class="menu-footer__list">
+            <li class="menu-footer__item">
+              <a data-goto=".main" href="#" class="menu-footer__link menu-footer__link_home">Главная</a>
+            </li>
+            <li class="menu-footer__item">
+              <a data-goto=".about" href="#" class="menu-footer__link menu-footer__link_about">Об мне</a>
+            </li>
+            <li class="menu-footer__item">
+              <a data-goto=".contacts" href="#" class="menu-footer__link menu-footer__link_contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__social social">
+          <a href="" class="social__link">
+            <img src="img/icons/facebook.svg" alt="facebook">
+          </a>
+          <a href="" class="social__link">
+            <img src="img/icons/instagram.svg" alt="instagram">
+          </a>
+          <a href="" class="social__link">
+            <img src="img/icons/twitter.svg" alt="twitter">
+          </a>
+          <a href="" class="social__link">
+            <img src="img/icons/youtube.svg" alt="youtube">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
