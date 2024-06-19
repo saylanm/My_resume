@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   border-bottom: 1px solid rgba(238, 238, 238, 0.1);
-  background-color: #ffea00;
+  background-color: #212121;
   z-index: 150;
 }
 
@@ -13,14 +13,14 @@
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .menu__link {
     width: 130px;
     height: 40px;
-    color: #000000;
+    color: #ffffff;
     border-radius: 5px;
     padding: 10px 25px;
     font-family: 'Lato', sans-serif;
@@ -31,6 +31,8 @@
     position: relative;
     display: inline-block;
     box-shadow: rgba(214, 48, 214, 0.5);
+    text-align: center;
+    justify-content: center;
 
 }
 
@@ -49,7 +51,7 @@
   z-index: -1;
   background-color: #fc3dff;
   border-radius: 10px;
-  box-shadow:inset 2px 2px 2px 0px rgba(104, 2, 79, 0.5);
+  box-shadow:inset 2px 2px 2px 0px rgba(195, 7, 233, 0.5);
   transition: all 0.3s ease;
 }
 
@@ -78,7 +80,7 @@
   /*background: linear-gradient(to right, blue, purple);
   padding: 3px;
   border-radius: 10px;
-  border: 1px solid black; другой вариант постановления кнопок в навигации хедера (весь функционал кроестся в расскрытии эти 3-ех строк из комента)*/
+  border: 1px solid black;*/
 }
 
 @media (max-width: 500px) {
@@ -92,3 +94,4 @@
     column-gap: 20px;
   }
 }
+

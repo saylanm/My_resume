@@ -12,9 +12,9 @@
 /* --------------- */
 body {
   font-family: "Poppins", "Helvetica Neue", Helvetica, sans-serif;
-  background-color: #ffffff;
+  background-color: #212121;
   color: rgba(255, 0, 255, 0.75);
-  font-size: 18px;
+
 }
 
 .wrapper {
@@ -29,13 +29,6 @@ body {
   padding-top: 85px;
 }
 
-.page__main {}
-
-.page__about {}
-
-.page__works {}
-
-.page__contacts {}
 
 @media (max-width: 500px) {
   .page {
@@ -50,7 +43,7 @@ body {
   margin: 0 auto;
 }
 
-/* -------------- */
+/*  убираем что бы убрать полосу по середине */
 .main {
   padding-top: 93px;
   padding-bottom: 98px;
@@ -182,7 +175,7 @@ body {
 .about__text {
   max-width: 390px;
   line-height: 150%;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .about__image {
@@ -335,18 +328,18 @@ body {
 
 .form__label {
   display: block;
-  color: #000000;
+  color: #000f81;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
-.form__input {
+.form__input { /* 2 инпута для имени и имэйла*/
   background: rgba(7, 86, 213, 0.5);
   border-radius: 16px;
   width: 100%;
   padding: 0 24px;
   color: #fff;
-  height: 59px;
+  height: 60px;
 }
 
 textarea.form__input {
@@ -356,7 +349,7 @@ textarea.form__input {
 }
 
 .form__input::placeholder {
-  color: rgba(5, 17, 255, 0.5);
+  color: rgb(255, 255, 255);
   transition: opacity 0.3s;
 }
 
@@ -423,3 +416,19 @@ textarea.form__input {
   border-radius: 10px;
   border: 1px solid black; 
   */
+
+  .main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chart-container {
+    width: 500px;
+    height: 500px;
+}
+#myChart {
+    width: 100%;
+    height: 100%;
+}
