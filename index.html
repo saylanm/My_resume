@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>ПОРТФОЛИО</title>
+  <title>PORTFOLIO</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -13,7 +13,7 @@
     <header class="header">
       <div class="header__container">
         <div class="header__logo">
-          <h2>SEMENOV SEMEN</h2>
+          <h2>SEMENOV SEMYON</h2>
         </div>
         <nav class="header__menu menu">
           <ul class="menu__list">
@@ -34,54 +34,24 @@
         <div class="tech-info">
           <h3>Технологии, которые я использую:</h3>
           <div class="tech-buttons">
+            <h4>Languages:</h4>
             <button>JavaScript</button>
             <button>Python</button>
-            <button>Java</button>
-            <button>Ruby</button>
-            <button>PHP</button>
+            <button>GIT</button>
+            <button>HTML</button>
+            <button>CSS</button>
+          </div>
+          <div class="tech-buttons">
+            <h4>Frameworks:</h4>
+            <button>React.js</button>
+            <button>Vue.js</button>
+            <button>DJANGO</button>
+            <button>DRF</button>
+            <button>API</button>
+            <button>DOCKER</button>
+            <button>LINUX</button>
           </div>
         </div>
-        <script>
-          // Данные для круговой диаграммы (пример)
-          var data = {
-              labels: ['JavaScript', 'Python', 'HTML', 'CSS', 'GIT', ],
-              datasets: [{
-                  label: 'Знание языков программирования',
-                  data: [40, 40, 20, 50, 50], // Примерные уровни знания (от 0 до 100)
-                  backgroundColor: [
-                      '#FF6384',
-                      '#36A2EB',
-                      '#FFCE56',
-                      '#4BC0C0',
-                      '#9966FF'
-                  ],
-                  hoverBackgroundColor: [
-                      '#FF6384',
-                      '#36A2EB',
-                      '#FFCE56',
-                      '#4BC0C0',
-                      '#9966FF'
-                  ]
-              }]
-          };
-
-          // Конфигурация графика
-          var options = {
-              responsive: true,
-              animation: {
-                  animateScale: true,
-                  animateRotate: true
-              }
-          };
-
-          // Получаем элемент canvas и создаем круговую диаграмму
-          var ctx = document.getElementById('myChart').getContext('2d');
-          var myChart = new Chart(ctx, {
-              type: 'doughnut',
-              data: data,
-              options: options
-          });
-        </script>
       </section>
       <section class="page__about about">
         <div class="about__container">
@@ -95,7 +65,7 @@
                 CSS(использовал шаблонизатор SCSS), Webpack(сборка и отправка проекта).
                 Из стека технологий фреймов - это Reac.jst/Vue.js. Так же мне повелось поработать в Figme(мало часов).
                 До frontend-разработки я занимался(около 1 года) бэкендом на Python в стеке Django/DRF(Django Rest Framework).
-                Но frontend, мне показался ближе по душе. Я побывал, как Бэке (условно говоря под капотом), что бы узнать,
+                Но frontend, мне показался ближе по душе. Я побывал, как Бэке, что бы узнать,
                 как устроено вся разработка и вовсе перешел во frontend.
               </p>
             </div>

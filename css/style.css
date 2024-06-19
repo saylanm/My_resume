@@ -482,3 +482,9 @@ textarea.form__input {
 .tech-buttons button:hover {
   background-color: #FF6384;
 }
+
+.about__image img {
+  width: 80%; /* Уменьшить ширину до 50% от исходной */
+  height: auto; /* Автоматически подстроить высоту */
+}
+
