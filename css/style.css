@@ -11,6 +11,7 @@
 
 /* --------------- */
 body {
+  margin: 0;
   font-family: "Poppins", "Helvetica Neue", Helvetica, sans-serif;
   background-color: #212121;
   color: rgba(255, 0, 255, 0.75);
@@ -439,20 +440,34 @@ textarea.form__input {
   align-items: center;
   height: 100vh;
 }
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px); /* Высота страницы минус высота header */
+  max-height: 600px; /* Максимальная высота */
+  margin: auto; /* Центрирование */
+  overflow: hidden; /* Скрыть содержимое, если оно выходит за пределы */
+}
+
 .chart-and-tech {
   display: flex;
   align-items: center;
 }
+
 .chart-container {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 300px;
+  max-height: 300px;
   margin-right: 50px;
 }
+
 .tech-info {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
 .tech-buttons button {
   margin: 5px 0;
   padding: 10px 20px;
@@ -463,6 +478,7 @@ textarea.form__input {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .tech-buttons button:hover {
   background-color: #FF6384;
 }

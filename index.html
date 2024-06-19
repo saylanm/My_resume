@@ -7,46 +7,6 @@
   <link rel="stylesheet" href="css/style.css">
   <title>ПОРТФОЛИО</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    body {
-
-        background-color: #212121;
-        margin: 0;
-    }
-    .main-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .chart-and-tech {
-        display: flex;
-        align-items: center;
-    }
-    .chart-container {
-        max-width: 300px;
-        max-height: 300px;
-        margin-right: 50px;
-    }
-    .tech-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .tech-buttons button {
-        margin: 5px 0;
-        padding: 10px 20px;
-        background-color: #36A2EB;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-    .tech-buttons button:hover {
-        background-color: #FF6384;
-    }
-  </style>
 </head>
 <body>
   <div class="wrapper">
@@ -68,30 +28,26 @@
     </header>
     <main class="page">
       <section class="page__main main">
-        <div class="main-container">
-          <div class="chart-and-tech">
-            <div class="chart-container">
-              <canvas id="myChart"></canvas>
-            </div>
-            <div class="tech-info">
-              <h3>Технологии, которые я использую:</h3>
-              <div class="tech-buttons">
-                <button>JavaScript</button>
-                <button>Python</button>
-                <button>Java</button>
-                <button>Ruby</button>
-                <button>PHP</button>
-              </div>
-            </div>
+        <div class="chart-container">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="tech-info">
+          <h3>Технологии, которые я использую:</h3>
+          <div class="tech-buttons">
+            <button>JavaScript</button>
+            <button>Python</button>
+            <button>Java</button>
+            <button>Ruby</button>
+            <button>PHP</button>
           </div>
         </div>
         <script>
           // Данные для круговой диаграммы (пример)
           var data = {
-              labels: ['JavaScript', 'Python', 'Java', 'Ruby', 'PHP'],
+              labels: ['JavaScript', 'Python', 'HTML', 'CSS', 'GIT', ],
               datasets: [{
                   label: 'Знание языков программирования',
-                  data: [90, 80, 70, 60, 50], // Примерные уровни знания (от 0 до 100)
+                  data: [40, 40, 20, 50, 50], // Примерные уровни знания (от 0 до 100)
                   backgroundColor: [
                       '#FF6384',
                       '#36A2EB',
@@ -211,4 +167,35 @@
       <div class="footer__container">
         <nav class="footer__menu menu-footer">
           <ul class="menu-footer__list">
-            <li class="menu-footer__item
+            <li class="menu-footer__item">
+              <a data-goto=".main" href="#" class="menu-footer__link menu-footer__link_home">Главная</a>
+            </li>
+            <li class="menu-footer__item">
+              <a data-goto=".about" href="#" class="menu-footer__link menu-footer__link_about">Об мне</a>
+            </li>
+            <li class="menu-footer__item">
+              <a data-goto=".contacts" href="#" class="menu-footer__link menu-footer__link_contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__social social">
+          <a href="" class="social__link">
+            <img src="img/icons/facebook.svg" alt="facebook">
+          </a>
+          <a href="" class="social__link">
+            <img src="img/icons/instagram.svg" alt="instagram">
+          </a>
+          <a href="" class="social__link">
+            <img src="img/icons/twitter.svg" alt="twitter">
+          </a>
+          <a href="" class="social__link">
+            <img src="img/icons/youtube.svg" alt="youtube">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
