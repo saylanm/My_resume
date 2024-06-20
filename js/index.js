@@ -3,7 +3,7 @@ var data = {
     labels: ['JavaScript', 'Python', 'HTML', 'CSS', 'GIT', ],
     datasets: [{
         label: 'Знание языков программирования',
-        data: [40, 40, 20, 50, 50], // Примерные уровни знания (от 0 до 100)
+        data: [30, 30, 15, 15, 10], // Примерные уровни знания (от 0 до 100)
         backgroundColor: [
             '#FF6384',
             '#36A2EB',
@@ -29,6 +29,8 @@ var options = {
         animateRotate: true
     }
 };
+
+
 
 // Получаем элемент canvas и создаем круговую диаграмму
 var ctx = document.getElementById('myChart').getContext('2d');
